@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Lesson</title>
+
+    <script src="js/scripts.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body id="body">
+
+
+<p id="demo"></p>
+
+    Hobbies: <input name="hobbies" id="hobbies"> <button  onclick="handleSubmit()">Add</button>
+
+    <br> <br>
+<ul id="result"></ul>
+
+<script>
+    var text1 = "";
+   function handleSubmit(){
+    var text2 = text1 + document.getElementById('hobbies').value;
+    document.getElementById("result").innerHTML = text2;
+    text1 = text2+"<br /> ";
+    document.getElementById("hobbies").value = "";
+   }
+ 
+   
+
+   // ;
+
+//document.getElementById("demo").innerHTML = 'This is James's bag';
+
+
+
+
+</script>
+
+</body>
+</html>

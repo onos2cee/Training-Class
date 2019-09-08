@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var siteName = "Javascript Lessons for beginners";
+        document.title = siteName;
+        var username;
+        var password;
+        var siteName;
+        var memType;
+        var allPosts;
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="js/scripts.js"></script>
+    
+    <script>
+        var postLikes = 51;
+
+        function addLikes(){
+            postLikes += 1;
+            return postLikes;
+        }
+
+        function removeLikes(){
+            postLikes -= 1;
+            return postLikes;
+        }
+
+
+        var accBalance = 5000;
+        var withdraw = 2000;
+
+
+        
+    </script>
+
+</head>
+<body id="body">
+    <p id="content"> </p>
+
+    <script> 
+
+var post1 = {
+    id: 1, title: "Intro to JS", 
+    description: "This is just the beginning", 
+    image: "images/post1.jpg", 
+    datePost: "28-8-2019", 
+    likes: 4,
+    showPost: function(){
+        return this.description + "<br/>" + "Likes: " + this.likes ;
+    }
+    };
+
+
+var post2 = {id: 2, title: "Using Variables", description: "Learning how to use Variables", 
+image: "images/post2.jpg", datePost: "28-8-2019", likes: 0,
+showPost: function(){
+        return this.description + "<br/>" + "Likes: " + this.likes ;
+    }
+};
+    
+
+post1.author = "admin";
+post2.author = "admin";
+var members = {id: 1, fName, lName, username, password, accType, sponsor};
+    </script>
+
+<p>Click the button to display the date.</p>
+
+<button class="btn btn-success" onclick='displayDate()'>The time is?</button><br /><br />
+<input class="col-sm-3 form-control" onchange="validateUser()" type="text" id="user" name="username" placeholder="Username"> <br />
+<span id="validateUser"></span><br>
+<input onchange="validatePass()" type="password" id="pass" name="password" placeholder="Password"> <br />
+<span id="validatePass"></span><br>
+
+<script>
+    onload=window.alert("Hello");
+    
+
+
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+
+function validateUser() {
+    var UserInput = document.getElementById("user").value;
+    if(UserInput != 'admin'){
+        document.getElementById("validateUser").innerHTML = 'Invalid Username';
+        document.getElementById("user").className = 'form-control col-sm-3 bg-danger';
+    }
+    
+    if(UserInput == 'admin'){
+        document.getElementById("validateUser").style.display = 'none';
+        document.getElementById("user").className = 'form-control col-sm-3 bg-success';
+        document.getElementById("user").style.color = 'white';
+    }  
+
+}
+
+function validatePass() {
+    var PasswordInput = document.getElementById("pass").value;
+    if(PasswordInput != 'administrator'){
+        document.getElementById("validatePass").innerHTML = 'Invalid Password';
+    }  
+}
+</script>
+
+<p id="demo"></p>
+
+
+
+   
+<script>
+
+</script>
+
+</body>
+</html>
